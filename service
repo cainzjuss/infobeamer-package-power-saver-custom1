@@ -9,7 +9,7 @@ from hosted import DEVICE
 TZ = pytz.timezone('Europe/Berlin')
 
 while 1:
-    time.sleep(5)
+    time.sleep(60)
 
     now = pytz.utc.localize(datetime.utcnow(), is_dst=None).astimezone(TZ)
     dow = now.weekday()
