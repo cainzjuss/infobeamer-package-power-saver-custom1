@@ -1,0 +1,11 @@
+= Power Saver package
+
+Very simple power saving example code. Just add this package
+to your existing setup and it will automatically power off
+your screen and the time configured in {{{service}}}.
+
+Right now there is no configuration GUI available, so you
+have to edit {{{service}}} and then use your modified
+version. Pull requests welcome.
+
+This package requires at least hosted os version 5.

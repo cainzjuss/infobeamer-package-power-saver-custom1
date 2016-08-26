@@ -1,0 +1,26 @@
+#!/usr/bin/python2.7
+import time
+import sys
+import pytz
+from datetime import datetime
+from hosted import DEVICE
+
+# Choose your timezone
+TZ = pytz.timezone('Europe/Berlin')
+
+while 1:
+    time.sleep(5)
+
+    now = pytz.utc.localize(datetime.utcnow(), is_dst=None).astimezone(TZ)
+    dow = now.weekday()
+    hour = now.hour
+
+    # Select when to turn on/off the screen. This
+    # one keeps the screen on between 8am and 8pm
+    # on normal weekdays.
+    # 
+    #            Mo         Fr
+    on = dow in (0, 1, 2, 3, 4) and 8 <= hour < 20
+
+    print >>sys.stderr, "Screen on: %r" % on
+    DEVICE.screen(on = on)
