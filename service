@@ -10,7 +10,7 @@ CONFIG.restart_on_update()
 tz = pytz.timezone(CONFIG['timezone'])
 
 while 1:
-    time.sleep(5)
+    time.sleep(60)
 
     now = pytz.utc.localize(datetime.utcnow(), is_dst=None).astimezone(tz)
     print >>sys.stderr, now
