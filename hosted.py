@@ -77,6 +77,10 @@ def font(value):
     return value
 
 @type
+def device(value):
+    return value
+
+@type
 def resource(value):
     return value
 
