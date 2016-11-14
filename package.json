@@ -1,5 +1,5 @@
 {
     "name": "Power Saver",
     "author": "fw@dividuum.de",
-    "desc": "Controls the attached screen"
+    "desc": "Powers down the screen at configurable times. Add to any of your Setups."
 }
