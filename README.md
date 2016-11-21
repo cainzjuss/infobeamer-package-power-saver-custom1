@@ -5,3 +5,40 @@
 Very simple power saving example code. Just add this package
 to your existing setup and it will automatically power off
 your screen according its configuration.
+
+# Adding this package to your existing setups
+
+First of all you have to install this package. The easiest
+way is probably to visit the package gallery, select the
+package and click on __Use this Package__.
+Then you have to enable __Advanced/developer options__ on the
+account page, otherwise the option to nest packages isn't
+available. Once that's done, go to your existing setup. It might
+look like this:
+
+![Before adding the sub package](package-tree-before.png)
+
+Click on the __Add..__ button. A dialog will open:
+
+![Adding a sub package](package-add-dialog.png)
+
+Give your added package a name. Using the name 
+__power__ is a good idea. Then click on the __Add__
+button next to the power package.
+
+![After adding the package](package-tree-after.png)
+
+Your setup configuration screen will now look like this. As
+you can see the _Power Saver_ package was added as a child
+Package to your existing package. Now it's time to customize
+the _Power Saver_ options. Click on the wrench symbol next to
+the Power Saver button. The interface will show you the
+options for that package:
+
+![Power package options](package-options.png)
+
+Select your time zone. Then mark each hour of each weekday.
+Clicking will toggle between **red** (the screen of your
+device will be turned off) and **green** (the screen will
+be active). You can keep holding your left mouse button
+to switch multiple hours at once.
