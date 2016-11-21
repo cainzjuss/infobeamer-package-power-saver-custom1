@@ -1,5 +1,6 @@
 {
     "name": "Power Saver",
     "author": "fw@dividuum.de",
-    "desc": "Powers down the screen at configurable times. Add to any of your Setups."
+    "desc": "Powers down the screen at configurable times. Add to any of your Setups.",
+    "repository": "https://github.com/info-beamer/package-power-saver"
 }
