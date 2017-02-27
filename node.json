@@ -1,5 +1,12 @@
 {
     "name": "Power Saver",
+    "optional": [
+        "COPYRIGHT",
+        ".*md$",
+        "^package-.*.png",
+        "^times.*",
+        ".gitignore"
+    ],
     "options": [{
         "title": "Time Zone and Schedule",
         "ui_width": 4,
