@@ -20,7 +20,7 @@ while 1:
     hour = dow * 24 + hour
     print >>sys.stderr, "Hour: %d" % hour
     
-    on = CONFIG['times'][hour]
+    on = CONFIG['times'].get(hour, True)
     print >>sys.stderr, "Screen on: %r" % on
 
     DEVICE.screen(on = on)
