@@ -4,6 +4,7 @@
         "COPYRIGHT",
         ".*md$",
         "^package-.*.png",
+        "package-header.jpg",
         "^times.*",
         ".gitignore"
     ],
