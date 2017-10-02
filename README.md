@@ -10,8 +10,9 @@ your screen according its configuration.
 
 First of all you have to install this package. The easiest
 way is probably to visit the package gallery, select the
-package and click on __Use this Package__.
-Then you have to enable __Advanced/developer options__ on the
+package and click on __Import package__ in the top
+right corner.
+You also have to enable __Advanced/developer options__ on the
 account page, otherwise the option to nest packages isn't
 available. Once that's done, go to your existing setup. It might
 look like this:
