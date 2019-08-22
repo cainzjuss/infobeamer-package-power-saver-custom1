@@ -2,5 +2,6 @@
     "name": "Power Saver",
     "author": "Florian Wesch <fw@info-beamer.com>",
     "desc": "Powers down the screen at configurable times. Add to any of your Setups.",
-    "repository": "https://github.com/info-beamer/package-power-saver"
+    "repository": "https://github.com/info-beamer/package-power-saver",
+    "platforms": ["pi/epoch-1", "pi/epoch-2"]
 }
