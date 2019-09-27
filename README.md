@@ -11,10 +11,7 @@ your screen according its configuration.
 First of all you have to install this package. The easiest
 way is probably to visit the package gallery, select the
 package and click on __Import package__ in the top
-right corner.
-You also have to enable __Advanced/developer options__ on the
-account page, otherwise the option to nest packages isn't
-available. Once that's done, go to your existing setup. It might
+right corner. Then go to any of your existing setups. It might
 look like this:
 
 ![Before adding the sub package](package-tree-before.png)
