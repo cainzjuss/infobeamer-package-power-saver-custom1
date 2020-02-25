@@ -40,3 +40,10 @@ Clicking will toggle between **red** (the screen of your
 device will be turned off) and **green** (the screen will
 be active). You can keep holding your left mouse button
 to switch multiple hours at once.
+
+# Offline
+
+This package will not work offline if the device does not
+have a correct system time, as it's impossible to turn the
+display on/off according to the set schedule. The device
+needs at least NTP access to work.

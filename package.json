@@ -5,8 +5,8 @@
     "repository": "https://github.com/info-beamer/package-power-saver",
     "platforms": ["pi/epoch-1", "pi/epoch-2"],
     "offline": {
-        "support": "maybe",
-        "info": "Needs correct system time to work"
+        "support": "no",
+        "info": "Requires correct system time to decide when to turn on/off displays"
     },
     "nesting": {
         "parents": "any",
