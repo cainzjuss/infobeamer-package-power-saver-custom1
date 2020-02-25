@@ -4,6 +4,10 @@
     "desc": "Powers down the screen at configurable times. Add to any of your Setups.",
     "repository": "https://github.com/info-beamer/package-power-saver",
     "platforms": ["pi/epoch-1", "pi/epoch-2"],
+    "offline": {
+        "support": "maybe",
+        "info": "Needs correct system time to work"
+    },
     "nesting": {
         "parents": "any",
         "childs": []
