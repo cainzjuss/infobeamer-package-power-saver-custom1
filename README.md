@@ -47,3 +47,6 @@ This package will not work offline if the device does not
 have a correct system time, as it's impossible to turn the
 display on/off according to the set schedule. The device
 needs at least NTP access to work.
+
+The screen will be turned on until the device managed to
+fetch a somewhat correct system time
