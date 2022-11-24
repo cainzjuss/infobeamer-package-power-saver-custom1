@@ -515,7 +515,7 @@
             ["US/Indiana-Starke", "US/Indiana-Starke"],
             ["US/Samoa", "US/Samoa"]
         ],
-        "default": "UTC"
+        "default": "device"
     }, {
         "title": "",
         "name": "times",
