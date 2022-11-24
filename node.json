@@ -15,6 +15,8 @@
         "type": "select",
         "hint": "Select the timezone and schedule used for powering the device.",
         "options": [
+            ["device", "Use device setting"],
+            ["", "-------------"],
             ["UTC", "UTC"],
             ["Europe/Berlin", "Europa / Berlin"],
             ["Europe/London", "Europe/London"],
@@ -24,9 +26,7 @@
             ["US/Michigan", "US/Michigan"],
             ["US/Mountain", "US/Mountain"],
             ["US/Pacific", "US/Pacific"],
-
             ["", "-------------"],
-
             ["Africa/Abidjan", "Africa/Abidjan"],
             ["Africa/Accra", "Africa/Accra"],
             ["Africa/Addis_Ababa", "Africa/Addis_Ababa"],
