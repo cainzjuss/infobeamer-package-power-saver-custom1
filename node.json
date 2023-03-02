@@ -1,5 +1,8 @@
 {
     "name": "Power Saver",
+    "permissions": {
+        "serial": "For turning on projectors"
+    },
     "optional": [
         "COPYRIGHT",
         ".*md$",
