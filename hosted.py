@@ -36,6 +36,7 @@ VERSION = "1.9"
 import os, re, sys, json, time, traceback, marshal, hashlib
 import errno, socket, select, threading, Queue, ctypes
 import pyinotify, requests
+import serial
 from functools import wraps
 from collections import namedtuple
 from tempfile import NamedTemporaryFile
@@ -112,6 +113,24 @@ def init_types():
         return value
 
 init_types()
+
+def turn_nec_on():
+    ser_port = '/dev/ttyS0'
+    baud_rate = 38400
+    projector_on_command = '02 00 00 00 00 02'
+    ser = serial.Serial(ser_port, baud_rate)
+    ser.write(bytearray.fromhex(projector_on_command))
+    time.sleep(5)
+    ser.close()
+
+def turn_nec_off():
+    ser_port = '/dev/ttyS0'
+    baud_rate = 38400
+    projector_on_command = '02 01 00 00 00 03'
+    ser = serial.Serial(ser_port, baud_rate)
+    ser.write(bytearray.fromhex(projector_on_command))
+    time.sleep(5)
+    ser.close()
 
 def log(msg, name='hosted.py'):
     sys.stderr.write("[{}] {}\n".format(name, msg))
@@ -1326,11 +1345,15 @@ class Device(object):
     def send_upstream(self, **data):
         self.send_raw(json.dumps(data))
 
+
+
     def turn_screen_off(self):
         self.send_raw("tv off")
+        turn_nec_off()
 
     def turn_screen_on(self):
         self.send_raw("tv on")
+        turn_nec_on()
 
     def screen(self, on=True):
         if on:
