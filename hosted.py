@@ -115,7 +115,7 @@ def init_types():
 init_types()
 
 def turn_nec_on():
-    ser_port = '/dev/ttyS0'
+    ser_port = '/dev/ttyUSB0'
     baud_rate = 38400
     projector_on_command = '02 00 00 00 00 02'
     ser = serial.Serial(ser_port, baud_rate)
@@ -124,7 +124,7 @@ def turn_nec_on():
     ser.close()
 
 def turn_nec_off():
-    ser_port = '/dev/ttyS0'
+    ser_port = '/dev/ttyUSB0'
     baud_rate = 38400
     projector_on_command = '02 01 00 00 00 03'
     ser = serial.Serial(ser_port, baud_rate)
