@@ -529,6 +529,14 @@
     },{
         "title": "projector",
         "name": "projector",
+        "options": [
+            ["/dev/ttyUSB0"],
+            ["/dev/ttyUSB1"],
+            ["/dev/ttyUSB2"],
+            ["/dev/ttyUSB3"],
+            ["/dev/ttyAMA0"],
+            ["/dev/ttyS0"]
+        ],
         "type": "string",
         "default": "Hello world"
     }]
