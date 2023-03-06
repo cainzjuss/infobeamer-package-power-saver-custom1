@@ -526,5 +526,10 @@
         "hint": "Select when your device should be in low power mode.",
         "page": "times.html",
         "default": []
+    },{
+        "title": "projector",
+        "name": "projector",
+        "type": "string",
+        "default": "Hello world"
     }]
 }
