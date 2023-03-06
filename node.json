@@ -527,8 +527,13 @@
         "page": "times.html",
         "default": []
     },{
-    "type": "device",
-    "title": "Device",
-    "name": "serial"
+    "type": "select",
+    "title": "port",
+    "name": "serial",
+    "options": [
+        ["/dev/ttyS0","/dev/ttyS0"],
+        ["/dev/ttyUSB0","/dev/ttyUSB0"],
+        ["/dev/ttyAMA0","/dev/ttyAMA0"]
+    ]
 }]
 }
