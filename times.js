@@ -20,20 +20,12 @@ function Config(times, onChange) {
   var onoff = true;
   var edit = false;
 
-  function edit_start(hour) {
-    onoff = !times[hour];
-    edit_do(hour);
-    edit = true;
-  }
 
   function edit_do(hour) {
     times[hour] = onoff;
     update_class(hour, onoff);
   }
 
-  function edit_stop() {
-    edit = false;
-  }
 
   function hour_from_elem(e) {
     return parseInt(e.id.split("-")[1]);
@@ -41,7 +33,9 @@ function Config(times, onChange) {
 
   function hourMouseDown(e) {
     var hour = hour_from_elem(e.target);
-    edit_start(hour);
+    onoff = !times[hour];
+    edit_do(hour);
+    edit = true;
   }
 
   function hourMouseOver(e) {
@@ -51,7 +45,7 @@ function Config(times, onChange) {
   }
 
   function bodyMouseUp() {
-    edit_stop();
+    edit = false;
     onChange(times);
   }
 
