@@ -2,7 +2,7 @@
     "name": "Power Saver Custom1",
     "author": "Florian Wesch <fw@info-beamer.com>",
     "desc": "Powers down the screen at configurable times. Add to any of your Setups. Modified by cainzjuss",
-    "repository": "https://github.com/info-beamer/package-power-saver",
+    "repository": "https://github.com/cainzjuss/infobeamer-package-power-saver-custom1",
     "platforms": ["pi/epoch-1", "pi/epoch-2"],
     "offline": {
         "support": "no",
