@@ -114,19 +114,19 @@ def init_types():
 
 init_types()
 
-def turn_nec_on():
+def turn_projector_on():
     ser_port = '/dev/ttyUSB0'
-    baud_rate = 38400
-    projector_on_command = '02 00 00 00 00 02'
+    baud_rate = 9600
+    projector_on_command = '02 41 44 30 31 3A 50 4F 4E 03'
     ser = serial.Serial(ser_port, baud_rate)
     ser.write(bytearray.fromhex(projector_on_command))
     time.sleep(5)
     ser.close()
 
-def turn_nec_off():
+def turn_projector_off():
     ser_port = '/dev/ttyUSB0'
-    baud_rate = 38400
-    projector_on_command = '02 01 00 00 00 03'
+    baud_rate = 9600
+    projector_on_command = '02 41 44 30 31 3A 50 4F 46 03'
     ser = serial.Serial(ser_port, baud_rate)
     ser.write(bytearray.fromhex(projector_on_command))
     time.sleep(5)
@@ -1349,11 +1349,11 @@ class Device(object):
 
     def turn_screen_off(self):
         self.send_raw("tv off")
-        turn_nec_off()
+        turn_projector_off()
 
     def turn_screen_on(self):
         self.send_raw("tv on")
-        turn_nec_on()
+        turn_projector_on()
 
     def screen(self, on=True):
         if on:

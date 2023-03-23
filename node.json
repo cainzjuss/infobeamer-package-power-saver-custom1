@@ -528,12 +528,14 @@
         "default": []
     },{
     "type": "select",
-    "title": "port",
+    "title": "Serial port",
     "name": "serial",
     "options": [
+        ["none","none"],
         ["/dev/ttyS0","/dev/ttyS0"],
         ["/dev/ttyUSB0","/dev/ttyUSB0"],
         ["/dev/ttyAMA0","/dev/ttyAMA0"]
-    ]
+    ],
+    "default": "none"
 }]
 }
