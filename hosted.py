@@ -117,7 +117,7 @@ init_types()
 def turn_projector_on():
     ser_port = '/dev/ttyUSB0'
     baud_rate = 9600
-    projector_on_command = '22 43 30 30 22 20 5B 43 52 5D'
+    projector_on_command = '43 30 30'
     ser = serial.Serial(ser_port, baud_rate)
     ser.write(bytearray.fromhex(projector_on_command))
     time.sleep(5)
@@ -126,7 +126,7 @@ def turn_projector_on():
 def turn_projector_off():
     ser_port = '/dev/ttyUSB0'
     baud_rate = 9600
-    projector_on_command = '22 43 30 31 22 20 5B 43 52 5D'
+    projector_on_command = '43 30 31'
     ser = serial.Serial(ser_port, baud_rate)
     ser.write(bytearray.fromhex(projector_on_command))
     time.sleep(5)
