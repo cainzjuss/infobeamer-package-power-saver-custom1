@@ -1355,9 +1355,9 @@ class Device(object):
 
     def turn_screen_on(self):
         self.send_raw("tv on")
-        turn_projector_on()
         time.sleep(10)
         self.send_raw("as")
+        turn_projector_on()
 
     def screen(self, on=True):
         if on:
